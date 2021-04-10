@@ -10,7 +10,22 @@ Rellax is a buttery smooth, super lightweight, vanilla javascript parallax libra
 
 
 ## Getting Started
-`npm install rellax --save` or if you're old school like us download and insert `rellax.min.js`
+### Using npm
+
+`npm install rellax --save`
+
+### Using yarn
+
+`yarn add rellax`
+
+### CDN
+
+`<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>`
+
+### Download Locally
+
+if you're old school like us download and insert `rellax.min.js` in your html
+
 
 ```html
 <div class="rellax">
@@ -23,7 +38,7 @@ Rellax is a buttery smooth, super lightweight, vanilla javascript parallax libra
   I’m extra slow and smooth
 </div>
 
-<script src="rellax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 <script>
   // Accepts any class name
   var rellax = new Rellax('.rellax');
@@ -64,7 +79,7 @@ Pass an array of breakpoints. Each breakpoint value represents the resolution fo
   });
 </script>
 ```
- 
+
 
 ### Centering
 After some fantastic work from [@p-realinho](https://github.com/p-realinho), we just released the ability to center parallax elements in your viewport! We'll be building a nice demo website, but for now check out the tests folder for several examples of how it works.
@@ -84,7 +99,7 @@ There's two ways to implement centering, either on specific elements or as a glo
 </div>
 ```
 2. #### Global Centering
-- To activate the center feature in your whole html, add the code your `<script>` tag or JS file: 
+- To activate the center feature in your whole html, add the code your `<script>` tag or JS file:
 ```html
 <script>
   // Center all the things!
